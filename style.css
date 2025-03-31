@@ -107,7 +107,7 @@ h2 {
 }
 
 .showcase-item {
-background-color: var(--or);
+  background-color: var(--or);
   border: 2px solid var(--ror);
   border-radius: 10px;
   padding: 20px;
@@ -138,7 +138,7 @@ background-color: var(--or);
 .showcase-item p {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 1rem;
-  color: var(--or);
+  color: var(--b1);
   margin-bottom: 10px;
 }
   

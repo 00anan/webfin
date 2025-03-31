@@ -107,8 +107,8 @@ h2 {
 }
 
 .showcase-item {
-  background-color: #fff;
-  border: 2px solid var(--b1);
+    background-color: var(--or);
+  border: 2px solid var(--ror);
   border-radius: 10px;
   padding: 20px;
   text-align: center;
@@ -129,7 +129,7 @@ h2 {
 
 
 .showcase-item h2 {
-  color: var(--or);
+  color: var(--b1);
   margin-bottom: 10px;
   font-size: 1.2rem;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;

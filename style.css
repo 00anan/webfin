@@ -107,7 +107,7 @@ h2 {
 }
 
 .showcase-item {
-    background-color: var(--or);
+background-color: var(--or);
   border: 2px solid var(--ror);
   border-radius: 10px;
   padding: 20px;

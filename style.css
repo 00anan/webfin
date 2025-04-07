@@ -206,7 +206,7 @@ h1,h2,h3 {
     position: relative;
     width: 500px;
     height: 440px;
-    background-image: url('border.png');
+    background-image: url('images/border.png');
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;

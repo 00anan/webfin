@@ -1,0 +1,488 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Homemade Apple';
+  src: url('HomemadeApple.ttf');
+}
+
+@font-face {
+  font-family: 'DJ5C';
+  src: url('DJ5CTRIAL.ttf');
+}
+
+@font-face {
+  font-family: 'Cochin';
+  src: url('Cochin.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #f2e5d9; 
+  --b1: #DFB386;
+  --b2: #C09173;
+  --b3: #7A594F;
+  --y: #FFF0C7;
+  --g1: #97946B;
+  --g2: #5F7055;
+}
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--y);
+    color: var(--b2);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    color: var(--g1);
+  }
+  a:hover {
+    color: var(--b3);
+  }
+  
+  h1,h2,h3 {
+    font-family: 'Cochin';
+    /* color: var(--br); */
+  }
+
+  /* head */
+/*top nav - latest archive etc*/
+nav {
+  background-color: var(--g1);
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+	white-space: nowrap;
+	width: auto;
+	padding: 10px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+}
+
+.top-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap; 
+}
+
+
+.top-buttons a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.top-buttons a:hover {
+  background-color: var(--g2);
+
+	border-radius: 20px;
+}
+  
+  .wrapper {
+    width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+    /* padding: 20px; */
+    /* border-radius: 20px; */
+    box-sizing: border-box;
+    /* display: grid; */
+    /* gap: 16px 16px; */
+    /* grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+              "header header header"
+              "main main aside"
+              "footer footer footer" */
+  }
+
+  .site-logo {
+    border-radius: 12px;
+    width: 50px;
+  }
+
+
+  /* lead */
+  .lead {
+    text-align: center;
+    margin: 48px 144px 0;
+  }
+  .lead p {
+    font-size: 20px;
+    font-family: 'Cochin';
+    max-width: 850px;
+    margin: 16px auto;
+    color: var(--b2);
+  }
+
+  .bigtext{ /*primary statement*/
+    font-family: DJ5C;
+    font-size: 56px;
+    font-weight: 700; /*just bold i think*/
+    margin: 20px auto;
+    color: var(--g2);
+    text-align: center;
+  }
+  
+  .medtext { /*secondary statement*/
+    font-size: 32px;
+    font-family: 'Cochin';
+    color: var(--b3);
+    margin-bottom: 25px;
+  }
+
+  .lead-display img {
+    width: 100%;
+    max-width: 100%;
+    height: auto; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin: 0 auto 32px;
+    display: block;
+}
+  
+/* showcase container */
+.showcase {
+  display: grid;
+  gap: 20px;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  flex-wrap: wrap;
+  margin: 50px 20px 0;
+
+}
+
+.showcase-item {
+  background-color: var(--b1);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* transition: transform 0.2s ease; */
+}
+
+/* .showcase-item:hover {
+  transform: translateY(-5px);
+} */
+
+.showcase-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain; 
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+
+.showcase-item h2 {
+  color: var(--g2);
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-family: 'Cochin'; 
+}
+
+.showcase-item p {
+  font-family: 'Cochin';
+  font-size: 16px;
+  color: var(--b3);
+  margin-bottom: 10px;
+}
+.showcase-item a {
+  color: var(--g1);
+}
+.showcase-item a:hover {
+  color: var(--b3);
+}
+  
+  /* footer */
+  footer {
+    font-family: 'Cochin';
+    margin-top: 80px;
+    padding-top: 32px;
+    text-align: center;
+    color: var(--g1);
+    font-size: 14px;
+  }
+  
+  .footer-links {
+    margin-top: 13px;
+  }
+  
+  .footer-links a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: var(--g1);
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: var(--b2);
+  }
+
+
+/*****************reviews******************/
+
+  .rtitle {
+    text-align: left;
+    color: var(--b3);
+    padding: 20px 20px 0 0;
+    font-size: xx-large;
+  }
+  .rtitle a {
+    text-align: left;
+    color: var(--g2);
+  }
+  .rtitle a:hover {
+    color: var(--g1);
+  }
+
+
+  .rheading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0;
+    line-height:8px;
+  }
+  
+  .rheading h3 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    color: var(--g2);
+  }
+  
+  .rheading .credit p {
+    margin: 0;
+    text-align: right;
+    font-size: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:lighter;
+    color: var(--g2);
+  }
+  .credit a {
+    color: var(--g1);
+  }
+  .credit a:hover {
+    color: var(--b3);
+  }
+
+            input[type='checkbox'] {
+                  display: none;
+            }
+              .lbl-toggle {
+                display: block;
+
+                font-family: monospace;
+                font-size: 1.2rem;
+                text-align: left;
+
+                padding: 1rem;
+
+                color: var(--h3);
+                background: none;
+
+                cursor: pointer;
+
+                border-radius: 7px;
+                transition: all 0.25s ease-out;
+                margin: 10px 10px 10px 10px;
+              }
+              .lbl-toggle::before {
+                  content: ' ';
+                  display: inline-block;
+                
+                  border-top: 5px solid transparent;
+                  border-bottom: 5px solid transparent;
+                  border-left: 5px solid currentColor;
+                
+                  vertical-align: middle;
+                  margin-right: .7rem;
+                  transform: translateY(-2px);
+                  transition: transform .2s ease-out;
+                }
+                .lbl-toggle h3 {
+                  padding: 0px;
+                  margin-left: 6px;
+                  display: inline;
+                }
+                .collapsible-content .content-inner {
+                
+                  border-bottom-left-radius: 10px;
+                  border-bottom-right-radius: 10px;
+                  padding: 10px 30px;
+                }
+                .collapsible-content {
+                  max-height: 0px;
+                  overflow: hidden;
+                  transition: max-height .25s ease-in-out;
+                }
+                .toggle:checked + .lbl-toggle + .collapsible-content {
+                  max-height: 70vh;
+                  overflow-y: auto;
+                }
+                .toggle:checked + .lbl-toggle::before {
+                  transform: rotate(90deg) translateX(-3px);
+                }    
+                .toggle:checked + .lbl-toggle {
+                  border-bottom-right-radius: 0;
+                  border-bottom-left-radius: 0;
+                }
+                .content-inner {
+                  padding: 20px;
+                  border-radius: 10px;
+                }
+                .content-inner p {
+                  padding: 5px 30px 5px 30px;
+                  color: var(--b2);
+                  font-family: 'Cochin';
+                  font-size: 20px;
+                  text-indent: 5%;
+                  border-radius: 10px;
+                }
+
+  .purple /*containing pic and rating*/{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    margin: 10px 0 5px 0;
+  }
+  
+  .review-frame.small {
+    width: 500px;
+    height: 440px;
+    background-image: url('images/border.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+  }
+  
+  .review-inner.small {
+    position: absolute;
+    top: 49px;
+    left: 47px;
+    width: 405px;
+    height: 339px;
+    object-fit: cover;
+  }
+  
+  .rat {
+    background-color: var(--g1);
+    margin: 20px 20px 0 20px;
+    width: 450px;
+    border-radius: 15px;
+    color: var(--white);
+    box-sizing: border-box;
+    text-align: left;
+    align-self: flex-start;
+    font-family: 'Cochin';
+    font-size: large;
+    padding: 148px 60px;
+  }
+  
+  .rat h3 {
+    margin: 0;
+  }
+
+
+/*****************gallery*********************/
+
+  .gallerysection {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .gpic.small,
+  .gpic2.small {
+    width: 500px;
+    height: 440px;
+    background-image: url('images/border.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+
+  }
+  
+  .gpici.small,
+  .gpici2.small {
+    position: absolute;
+    top: 49px;
+    left: 47px;
+    width: 405px;
+    height: 339px;
+    object-fit: cover;
+  }
+  .gallerywrapper {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .caption {
+    font-size: 20px;
+    font-family: 'Cochin';
+    max-width: 850px;
+    margin: 16px auto;
+    color: var(--b2);
+  }
+  
+  
+  /*****************about*********************/
+
+  .ap {
+    color: var(--b2);
+    padding-left: 30px;
+    font-family: 'Cochin';
+    margin-top: 5px;
+  }
+  
+  .at {
+    font-size: 32px;
+    font-family: 'Cochin';
+    color: var(--b3);
+    margin-top: 20px;
+  }
+  .arat { /*about page "rating" block, aka the bio block*/
+    background-color: var(--g1);
+    margin: 20px 20px 0 20px;
+    width: 450px;
+    border-radius: 15px;
+    color: var(--white);
+    box-sizing: border-box;
+    text-align: left;
+    align-self: flex-start;
+    font-family: 'Cochin';
+    font-size: large;
+  }
+  
+  .arat h3 {
+    margin: 0;
+  }
+
+  .arat:not(#rat3) {
+    padding: 102px 60px;
+  }
+  .arat#rat3 {
+    padding: 30px 60px;
+  }

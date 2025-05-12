@@ -1,0 +1,368 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Homemade Apple';
+  src: url('HomemadeApple.ttf');
+}
+
+@font-face {
+  font-family: 'DJ5C';
+  src: url('DJ5CTRIAL.ttf');
+}
+
+@font-face {
+  font-family: 'Cochin';
+  src: url('Cochin.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #faefe4; 
+  --b1: #DFB386;
+  --b2: #af8164;
+  --b3: #7A594F;
+  --y: #FFF0C7;
+  --g1: #97946B;
+  --g2: #5F7055;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--y);
+    color: var(--b2);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    color: var(--g2);
+  }
+  a:hover {
+    color: var(--g1);
+  }
+  
+  h1,h2,h3 {
+    font-family: 'Cochin';
+    color: var(--white);
+  }
+      
+  /* head */
+/*top nav - latest archive etc*/
+nav {
+  background-color: var(--g1);
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+	white-space: nowrap;
+	width: auto;
+	padding: 10px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+}
+
+.top-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap; 
+}
+
+
+.top-buttons a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.top-buttons a:hover {
+  background-color: var(--g2);
+
+	border-radius: 20px;
+}
+  
+  .wrapper {
+    width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+    box-sizing: border-box;
+  }
+
+  .site-logo {
+    border-radius: 12px;
+    width: 50px;
+  }
+
+
+  /* lead */
+  .lead {
+    text-align: center;
+    margin: 48px 144px 0;
+  }
+  .lead p {
+    font-size: 20px;
+    font-family: 'Cochin';
+    max-width: 850px;
+    margin: 16px auto;
+    color: var(--b2);
+  }
+
+  .bigtext{ /*primary statement*/
+    font-family: DJ5C;
+    font-size: 56px;
+    font-weight: 700; /*just bold i think*/
+    margin: 20px auto;
+    color: var(--g2);
+    text-align: center;
+  }
+  
+  .medtext { /*secondary statement*/
+    font-size: 32px;
+    font-family: 'Cochin';
+    color: var(--b3);
+    margin-bottom: 25px;
+  }
+
+  .lead-display img {
+    width: 100%;
+    max-width: 100%;
+    height: auto; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin: 0 auto 32px;
+    display: block;
+}
+  
+  /* footer */
+  footer {
+    font-family: 'Cochin';
+    margin-top: 80px;
+    padding-top: 32px;
+    text-align: center;
+    color: var(--g1);
+    font-size: 14px;
+  }
+  
+  .footer-links {
+    margin-top: 13px;
+  }
+  
+  .footer-links a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: var(--g1);
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: var(--b2);
+  }
+  .foot a {
+    text-decoration: none;
+    color: var(--b2);
+    transition: color 0.3s;
+  }
+  
+  .foot a:hover {
+    color: var(--g2);
+  }
+
+  .worldmap {
+    width: 1000px;
+    height: 800px;
+    background: url('images/map.png') no-repeat;
+    background-size: 1000px;
+    position: relative; 
+    margin: 0;
+    padding: 0;
+  }
+
+  .icon-image {
+    position: absolute;
+    transition: transform 0.2s;
+  }
+  
+  .icon-image:hover {
+    transform: scale(1.4);
+    z-index: 20;
+  }
+
+  .hoverpiwi {
+    position: absolute;
+    top: 68.2%;
+    left: 1.3%;
+    display: in-line;
+    font-family: cochin;
+    font-size: 25px;
+    background: var(--b2);
+    color: white;
+    padding: 6px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s;
+    pointer-events: none;
+  }
+
+  .icon-image:hover + .hoverpiwi {
+    opacity: 1;
+    display:in-line;
+  }
+
+  #carp-icon {
+    width: 47.5px;
+    top: 13.65%;
+    right: 39.55%;
+  }
+
+  #ag-icon {
+    width: 31px;
+    top: 10.4%;
+    right: 25.6%;
+  }
+
+  #bus-icon {
+    width: 37.2px;
+    top: 22.999%;
+    left: 39.8%;
+  }
+  
+  #joja-icon {
+    width: 45px;
+    top: 32.3%;
+    right: 25.5%;
+  }
+  
+  #pierre-icon {
+    width: 46.26px;
+    top: 33.2%;
+    right: 39.25%;
+  }
+  
+  #saloon-icon {
+    width: 28px;
+    top: 38.39%;
+    right: 39.2%;
+  }
+  
+  #marnie-icon {
+    width: 56px;
+    top: 40.88%;
+    left: 32.4%;
+  }
+  
+  #bs-icon {
+    width: 31px;
+    top: 41.65%;
+    right: 27.2%;
+  }
+  
+  #museum-icon {
+    width: 31px;
+    top: 44.1%;
+    right: 24.9%;
+  }
+
+  #fish-icon {
+    width: 31.5px;
+    bottom: 33.28%;
+    right: 30.76%;
+  }
+
+  
+  i {
+    color: var(--white);
+  }
+  .location {
+    background-color: var(--b1);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .location img {
+    width: 50%;
+    border-radius: 15px;
+    
+  }
+
+  .inloc {
+    padding-left: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .inloc ul,li{
+    color: var(--white);
+    font-family: cochin;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .inloc p {
+    color: var(--g2);
+    font-family: cochin;
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  .inloc h3{
+    text-align: left;
+  }
+
+  .inloc h2 {
+    color: var(--g2);
+    font-family: cochin;
+    font-size: 33px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .inloc .type{
+    text-align: right;
+  }
+
+  .location a {
+    color: var(--g2);
+    font-family: cochin;
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .location a:hover {
+    color: var(--g1);
+  }
+
+  .iwrapper {
+    background: url('images/Plasma_TV.png') no-repeat center center;
+    background-size: contain;
+    height: 470px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .iwrapper img {
+    max-width: 40%;
+    max-height: 100%;
+    transform: translateY(-10%);
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+  }
